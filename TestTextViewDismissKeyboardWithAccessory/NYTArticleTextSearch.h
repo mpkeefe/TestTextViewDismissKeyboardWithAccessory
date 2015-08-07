@@ -10,11 +10,11 @@
 
 @interface NYTArticleTextSearch : NSObject
 
-@property (nonatomic, copy, readonly) NSArray *matchingRanges;
+@property (nonatomic, copy, readonly, nullable) NSArray *matchingRanges;
 
 @property (nonatomic, readonly) NSUInteger numberOfMatches;
 
-- (void)matchText:(NSString *)textToFind;
+- (void)matchText:(NSString * __nonnull)textToFind;
 
 - (NSUInteger)indexOfRange:(NSRange)textSearchRange;
 

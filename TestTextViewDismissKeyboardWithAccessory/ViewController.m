@@ -10,6 +10,7 @@
 #import "NYTTextSearchView.h"
 #import "NYTArticleTextSearch.h"
 #import "UITextView+NYTAdditions.h"
+#import "NYTTextAccessoryContainerView.h"
 
 CGFloat const NYTiPhoneViewPadding = 16.0;
 
@@ -83,7 +84,6 @@ static NSString * const TestText = @"Apple offers a number of resources where yo
     
     self.textView.text = TestText;
 
-    self.textView.inputAccessoryView = self.textSearchView;
     
     self.textView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     self.textView.decelerationRate = UIScrollViewDecelerationRateFast;
@@ -96,7 +96,14 @@ static NSString * const TestText = @"Apple offers a number of resources where yo
     // Text does not line up properly with the header text, even though they both use the same padding.
     CGFloat bodyIndent = 5.0;
     self.textView.textContainerInset = UIEdgeInsetsMake(self.textView.textContainerInset.top, NYTiPhoneViewPadding - bodyIndent, self.textView.textContainerInset.bottom, NYTiPhoneViewPadding - bodyIndent);
-    [self.view addSubview:self.textView];
+    
+    
+    NYTTextAccessoryContainerView *textAccesoryContainerView = [[NYTTextAccessoryContainerView alloc] initWithFrame: textViewFrame];
+    textAccesoryContainerView.inputAccessoryView = self.textSearchView;
+
+    [textAccesoryContainerView addSubview:self.textView];
+    [self.view addSubview:textAccesoryContainerView];
+    
     [self.textView setNeedsLayout];
 }
 
@@ -173,6 +180,9 @@ static NSString * const TestText = @"Apple offers a number of resources where yo
         UIEdgeInsets textSearchInsets = UIEdgeInsetsMake(64.0, 0.0, 0.0, 0.0);
         self.textView.contentInset = textSearchInsets;
         self.textView.scrollIndicatorInsets = textSearchInsets;
+//        CGFloat bodyIndent = 5.0;
+//        self.textView.textContainerInset = UIEdgeInsetsMake(self.textView.textContainerInset.top, NYTiPhoneViewPadding - bodyIndent, 0, NYTiPhoneViewPadding - bodyIndent);
+
     }];
 }
 

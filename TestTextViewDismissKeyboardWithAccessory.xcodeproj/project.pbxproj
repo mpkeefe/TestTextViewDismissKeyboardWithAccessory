@@ -14,6 +14,10 @@
 		CDFAC2491B74F43B00E9D0C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDFAC2481B74F43B00E9D0C3 /* Images.xcassets */; };
 		CDFAC24C1B74F43B00E9D0C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFAC24A1B74F43B00E9D0C3 /* LaunchScreen.xib */; };
 		CDFAC2581B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2571B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.m */; };
+		CDFAC2631B74FFFC00E9D0C3 /* NYTTextSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */; };
+		CDFAC2651B75002800E9D0C3 /* NYTTextSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFAC2641B75002800E9D0C3 /* NYTTextSearchView.xib */; };
+		CDFAC2681B75017700E9D0C3 /* NYTArticleTextSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */; };
+		CDFAC26B1B75035100E9D0C3 /* UITextView+NYTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		CDFAC2511B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTextViewDismissKeyboardWithAccessoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDFAC2561B74F43B00E9D0C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDFAC2571B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTextViewDismissKeyboardWithAccessoryTests.m; sourceTree = "<group>"; };
+		CDFAC2611B74FFFC00E9D0C3 /* NYTTextSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTextSearchView.h; sourceTree = "<group>"; };
+		CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTextSearchView.m; sourceTree = "<group>"; };
+		CDFAC2641B75002800E9D0C3 /* NYTTextSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYTTextSearchView.xib; sourceTree = "<group>"; };
+		CDFAC2661B75017700E9D0C3 /* NYTArticleTextSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTextSearch.h; sourceTree = "<group>"; };
+		CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleTextSearch.m; sourceTree = "<group>"; };
+		CDFAC2691B75035100E9D0C3 /* UITextView+NYTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+NYTAdditions.h"; sourceTree = "<group>"; };
+		CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+NYTAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +96,16 @@
 				CDFAC2401B74F43B00E9D0C3 /* AppDelegate.m */,
 				CDFAC2421B74F43B00E9D0C3 /* ViewController.h */,
 				CDFAC2431B74F43B00E9D0C3 /* ViewController.m */,
+				CDFAC2611B74FFFC00E9D0C3 /* NYTTextSearchView.h */,
+				CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */,
+				CDFAC2661B75017700E9D0C3 /* NYTArticleTextSearch.h */,
+				CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */,
+				CDFAC2691B75035100E9D0C3 /* UITextView+NYTAdditions.h */,
+				CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */,
 				CDFAC2451B74F43B00E9D0C3 /* Main.storyboard */,
 				CDFAC2481B74F43B00E9D0C3 /* Images.xcassets */,
 				CDFAC24A1B74F43B00E9D0C3 /* LaunchScreen.xib */,
+				CDFAC2641B75002800E9D0C3 /* NYTTextSearchView.xib */,
 				CDFAC23B1B74F43B00E9D0C3 /* Supporting Files */,
 			);
 			path = TestTextViewDismissKeyboardWithAccessory;
@@ -202,6 +220,7 @@
 				CDFAC2471B74F43B00E9D0C3 /* Main.storyboard in Resources */,
 				CDFAC24C1B74F43B00E9D0C3 /* LaunchScreen.xib in Resources */,
 				CDFAC2491B74F43B00E9D0C3 /* Images.xcassets in Resources */,
+				CDFAC2651B75002800E9D0C3 /* NYTTextSearchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +240,10 @@
 			files = (
 				CDFAC2441B74F43B00E9D0C3 /* ViewController.m in Sources */,
 				CDFAC2411B74F43B00E9D0C3 /* AppDelegate.m in Sources */,
+				CDFAC2681B75017700E9D0C3 /* NYTArticleTextSearch.m in Sources */,
+				CDFAC26B1B75035100E9D0C3 /* UITextView+NYTAdditions.m in Sources */,
 				CDFAC23E1B74F43B00E9D0C3 /* main.m in Sources */,
+				CDFAC2631B74FFFC00E9D0C3 /* NYTTextSearchView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -16,7 +16,7 @@
 		CDFAC2581B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2571B74F43B00E9D0C3 /* TestTextViewDismissKeyboardWithAccessoryTests.m */; };
 		CDFAC2631B74FFFC00E9D0C3 /* NYTTextSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */; };
 		CDFAC2651B75002800E9D0C3 /* NYTTextSearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDFAC2641B75002800E9D0C3 /* NYTTextSearchView.xib */; };
-		CDFAC2681B75017700E9D0C3 /* NYTArticleTextSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */; };
+		CDFAC2681B75017700E9D0C3 /* NYTTextSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC2671B75017700E9D0C3 /* NYTTextSearch.m */; };
 		CDFAC26B1B75035100E9D0C3 /* UITextView+NYTAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */; };
 		CDFAC26E1B75340300E9D0C3 /* NYTTextAccessoryContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFAC26D1B75340300E9D0C3 /* NYTTextAccessoryContainerView.m */; };
 /* End PBXBuildFile section */
@@ -48,8 +48,8 @@
 		CDFAC2611B74FFFC00E9D0C3 /* NYTTextSearchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTextSearchView.h; sourceTree = "<group>"; };
 		CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTextSearchView.m; sourceTree = "<group>"; };
 		CDFAC2641B75002800E9D0C3 /* NYTTextSearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NYTTextSearchView.xib; sourceTree = "<group>"; };
-		CDFAC2661B75017700E9D0C3 /* NYTArticleTextSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTArticleTextSearch.h; sourceTree = "<group>"; };
-		CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTArticleTextSearch.m; sourceTree = "<group>"; };
+		CDFAC2661B75017700E9D0C3 /* NYTTextSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTextSearch.h; sourceTree = "<group>"; };
+		CDFAC2671B75017700E9D0C3 /* NYTTextSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NYTTextSearch.m; sourceTree = "<group>"; };
 		CDFAC2691B75035100E9D0C3 /* UITextView+NYTAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+NYTAdditions.h"; sourceTree = "<group>"; };
 		CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+NYTAdditions.m"; sourceTree = "<group>"; };
 		CDFAC26C1B75340300E9D0C3 /* NYTTextAccessoryContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NYTTextAccessoryContainerView.h; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 				CDFAC2621B74FFFC00E9D0C3 /* NYTTextSearchView.m */,
 				CDFAC26C1B75340300E9D0C3 /* NYTTextAccessoryContainerView.h */,
 				CDFAC26D1B75340300E9D0C3 /* NYTTextAccessoryContainerView.m */,
-				CDFAC2661B75017700E9D0C3 /* NYTArticleTextSearch.h */,
-				CDFAC2671B75017700E9D0C3 /* NYTArticleTextSearch.m */,
+				CDFAC2661B75017700E9D0C3 /* NYTTextSearch.h */,
+				CDFAC2671B75017700E9D0C3 /* NYTTextSearch.m */,
 				CDFAC2691B75035100E9D0C3 /* UITextView+NYTAdditions.h */,
 				CDFAC26A1B75035100E9D0C3 /* UITextView+NYTAdditions.m */,
 				CDFAC2451B74F43B00E9D0C3 /* Main.storyboard */,
@@ -246,7 +246,7 @@
 				CDFAC2441B74F43B00E9D0C3 /* ViewController.m in Sources */,
 				CDFAC26E1B75340300E9D0C3 /* NYTTextAccessoryContainerView.m in Sources */,
 				CDFAC2411B74F43B00E9D0C3 /* AppDelegate.m in Sources */,
-				CDFAC2681B75017700E9D0C3 /* NYTArticleTextSearch.m in Sources */,
+				CDFAC2681B75017700E9D0C3 /* NYTTextSearch.m in Sources */,
 				CDFAC26B1B75035100E9D0C3 /* UITextView+NYTAdditions.m in Sources */,
 				CDFAC23E1B74F43B00E9D0C3 /* main.m in Sources */,
 				CDFAC2631B74FFFC00E9D0C3 /* NYTTextSearchView.m in Sources */,

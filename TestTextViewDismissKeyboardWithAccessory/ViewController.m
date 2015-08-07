@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "NYTTextSearchView.h"
-#import "NYTArticleTextSearch.h"
+#import "NYTTextSearch.h"
 #import "UITextView+NYTAdditions.h"
 #import "NYTTextAccessoryContainerView.h"
 
@@ -53,7 +53,7 @@ static NSString * const TestText = @"Apple offers a number of resources where yo
 @interface ViewController () <NYTTextSearchViewDelegate, UITextViewDelegate>
 
 @property (nonatomic) UITextView *textView;
-@property (nonatomic) NYTArticleTextSearch *articleTextSearch;
+@property (nonatomic) NYTTextSearch *articleTextSearch;
 @property (nonatomic) NYTTextSearchView *textSearchView;
 @property (nonatomic) NSUInteger selectedTextSearchRangeIndex;
 @property (nonatomic, getter=isTextSearchInProgress) BOOL textSearchInProgress;
@@ -188,9 +188,9 @@ static NSString * const TestText = @"Apple offers a number of resources where yo
 
 #pragma mark - Find Text
 
-- (NYTArticleTextSearch *)articleTextSearch {
+- (NYTTextSearch *)articleTextSearch {
     if (!_articleTextSearch) {
-        _articleTextSearch = [[NYTArticleTextSearch alloc] initWithSearchText:self.textView.text];
+        _articleTextSearch = [[NYTTextSearch alloc] initWithSearchText:self.textView.text];
     }
     
     return _articleTextSearch;

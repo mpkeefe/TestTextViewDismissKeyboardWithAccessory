@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NYTArticleTextSearch : NSObject
+@interface NYTTextSearch : NSObject
 
 @property (nonatomic, copy, readonly, nullable) NSArray *matchingRanges;
 

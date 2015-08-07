@@ -6,16 +6,16 @@
 //  Copyright © 2015 NYTimes. All rights reserved.
 //
 
-#import "NYTArticleTextSearch.h"
+#import "NYTTextSearch.h"
 
-@interface NYTArticleTextSearch ()
+@interface NYTTextSearch ()
 
 @property (nonatomic) NSString *textToSearch;
 @property (nonatomic, copy, readwrite) NSArray *matchingRanges;
 
 @end
 
-@implementation NYTArticleTextSearch
+@implementation NYTTextSearch
 
 - (nullable instancetype)initWithSearchText:(nullable NSString *)textToSearch {
     self = [super init];
